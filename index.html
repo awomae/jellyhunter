@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Cybersecurity portfolio of Emmanuel Awoma: certifications, projects, skills, and contact." />
+  <title>Emmanuel Awoma | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand__dot" aria-hidden="true"></span>
+        Emmanuel <strong>Awoma</strong>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="siteNav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button id="darkToggle" class="btn btn--ghost" type="button" aria-pressed="false">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="top" aria-label="Intro">
+    <div class="hero__bg" role="img" aria-label="Cybersecurity abstract background"></div>
+    <div class="container hero__content">
+      <h1 class="reveal">Securing the Digital&nbsp;Frontier</h1>
+      <p class="lead reveal">Human-centered cybersecurity — practical, precise, and proactive.</p>
+      <div class="cta reveal">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn btn--accent" href="#contact">Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container readable">
+      <h2 class="section__title reveal">About Me</h2>
+      <p class="reveal">
+        I’m a cybersecurity professional with hands-on experience in threat analysis, penetration testing,
+        and multicloud networking. I love translating complex risks into simple, human-friendly decisions,
+        then building defenses that scale.
+      </p>
+    </div>
+  </section>
+
+  <!-- Certifications (clickable, logos from /images) -->
+  <section id="certifications" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title reveal">Certifications</h2>
+
+      <div class="cert-grid">
+        <a class="cert reveal" href="https://www.credly.com/badges/0a28eafb-9d96-4b27-a46d-42f99d0c8303/public_url" target="_blank" rel="noopener">
+          <img src="images/google-cybersecurity.png" alt="Google Cybersecurity Professional Certificate" loading="lazy" />
+        </a>
+
+        <a class="cert reveal" href="https://www.credly.com/badges/64ec3f7d-7369-4d11-868c-fc6aa00add6c/public_url" target="_blank" rel="noopener">
+          <img src="images/aviatrix-ace.png" alt="Aviatrix ACE Multicloud Network Associate" loading="lazy" />
+        </a>
+
+        <a class="cert reveal" href="https://www.credly.com/badges/ddbd2ebb-37c4-422e-9723-256f4edd2fbb/public_url" target="_blank" rel="noopener">
+          <img src="images/cisco-cyberops.png" alt="Cisco CyberOps Associate" loading="lazy" />
+        </a>
+
+        <a class="cert reveal" href="https://www.credly.com/badges/d8e4482a-436e-468f-b65f-df70d1dfad99/linked_in_profile" target="_blank" rel="noopener">
+          <img src="images/google-ai.png" alt="Google AI Essential" loading="lazy" />
+        </a>
+
+        <a class="cert reveal" href="https://www.credly.com/badges/973d1670-17f4-48ba-a3bc-937c438c9abe/linked_in_profile" target="_blank" rel="noopener">
+          <img src="images/network security.png" alt="Cisco Network Security" loading="lazy" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects (small, responsive, card architecture) -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section__title reveal">Projects</h2>
+
+      <div class="projects-grid">
+        <!-- Project card -->
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="https://raw.githubusercontent.com/juice-shop/juice-shop/master/frontend/src/assets/public/images/JuiceShop_Logo.png"
+                 alt="OWASP Juice Shop" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">OWASP Juice Shop</h3>
+            <p class="card__text">Deliberately vulnerable app for training & CTFs. Practiced auth bypass, injection, and broken access control.</p>
+          </div>
+          <div class="card__tags">
+            <span>OWASP</span><span>Web</span><span>CTF</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="https://miro.medium.com/v2/resize:fit:600/format:webp/1*6bLRa3i1QPSGchKEVFE9jw.jpeg"
+                 alt="DVWA" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">DVWA</h3>
+            <p class="card__text">Hands-on exploitation lab: XSS, CSRF, SQLi, brute force. Built repeatable test playbooks.</p>
+          </div>
+          <div class="card__tags">
+            <span>XSS</span><span>SQLi</span><span>Playbooks</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="https://miro.medium.com/v2/resize:fit:600/format:webp/1*l0dZW0__5ouH_m-6pc0zKg.jpeg"
+                 alt="bWAPP" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">bWAPP</h3>
+            <p class="card__text">Buggy app for vulnerability practice. Focused on IDOR and session management weaknesses.</p>
+          </div>
+          <div class="card__tags">
+            <span>IDOR</span><span>Sessions</span><span>Web</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills (Shields.io badges) -->
+  <section id="skills" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title reveal">Skills</h2>
+      <div class="skills-grid reveal">
+        <img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" alt="Wireshark" loading="lazy" />
+        <img src="https://img.shields.io/badge/-Nmap-00457C?&style=for-the-badge&logo=Nmap&logoColor=white" alt="Nmap" loading="lazy" />
+        <img src="https://img.shields.io/badge/-Burp%20Suite-FF6F00?&style=for-the-badge&logo=Burp-Suite&logoColor=white" alt="Burp Suite" loading="lazy" />
+        <img src="https://img.shields.io/badge/-Splunk-000000?&style=for-the-badge&logo=Splunk&logoColor=white" alt="Splunk" loading="lazy" />
+        <img src="https://img.shields.io/badge/-IBM%20QRadar-052FAD?&style=for-the-badge&logo=IBM&logoColor=white" alt="IBM QRadar" loading="lazy" />
+        <img src="https://img.shields.io/badge/-Wazuh-006D77?&style=for-the-badge&logo=Wazuh&logoColor=white" alt="Wazuh" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section__title reveal">Contact</h2>
+      <div class="contact-card reveal">
+        <a class="contact-link" href="mailto:emma.awoma@gmail.com" aria-label="Email Emmanuel">
+          <img src="images/email.png" width="44" height="44" alt="Email" loading="lazy" />
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/awomaemmanuel-profile" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src="images/linkedin.png" width="44" height="44" alt="LinkedIn" loading="lazy" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Emmanuel Awoma — Built by Teematech Global Links</p>
+      <button id="backToTop" class="btn btn--accent btn--small" type="button" aria-label="Back to top">↑</button>
+    </div>
+  </footer>
+</body>
+</html>
